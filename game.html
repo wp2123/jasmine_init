@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Guess Number Game</title>
+    <script type="text/javascript" src="src/play_game.js"></script>
+    <script type="text/javascript" src="src/guess.js"></script>
+    <script type="text/javascript" src="src/compare_two_number.js"></script>
+    <script type="text/javascript" src="src/game.js"></script>
+    <script type="text/javascript" src="src/random.js"></script>
+</head>
+<body style="background: gainsboro">
+<input type="button" onclick="window.location.href='SpecRunner.html'" value="Return to Test"/>
+<div align="center">
+    <h3>
+        Game Guides
+    </h3>
+    <p>You have 6 times to guess the 4 bits random number.<br/>
+        If the number you inputted has one member the same as answer with location and value, it will return 1 A.<br/>
+        If the number you inputted has one member the same as answer only with value, it will return 1 B. <br/>
+        Example: Answer is 1234, what you inputted is 1498,then return 1A1B.
+    </p>
+    <br/>
+    <br/>
+    <span>
+        <input type="text" id="input">
+        <input type="button" value="Confirm The Entry" onclick="play_game()">
+    </span>
+    <br/>
+    <br/>
+    <span>
+        <input type="text" id="output">Return Prompt
+    </span>
+    <br/>
+    <br/>
+     <span>
+        <input type="text" id="result">Result
+    </span>
+    <br/>
+    <br/>
+    <span>
+        <input type="button" id="restart" value="Restart Game">
+    </span>
+</div>
+
+</body>
+
+</html>
